@@ -61,18 +61,58 @@ Admin Login → Admin Dashboard → Manage Exams/Users/Reports
 ## 📁 Folder Structure
 
 ```
-exam-portal-wireframe/
-├── figma/
-│   └── exam-portal.fig
-├── assets/
-│   ├── icons/
-│   └── images/
-├── exports/
-│   ├── png/
-│   └── svg/
-├── documentation/
-│   ├── user-flow.pdf
-│   └── design-system.pdf
+exam-portal/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └── Register.jsx
+│   │   │   ├── student/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── ExamInterface.jsx
+│   │   │   │   └── Results.jsx
+│   │   │   └── admin/
+│   │   │       ├── AdminDashboard.jsx
+│   │   │       ├── CreateExam.jsx
+│   │   │       └── UserManagement.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   └── Payment.jsx
+│   │   ├── styles/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── public/
+│   ├── package.json
+│   └── .env
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   ├── authController.js
+│   │   │   ├── examController.js
+│   │   │   └── userController.js
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   ├── Exam.js
+│   │   │   ├── Question.js
+│   │   │   └── Result.js
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   ├── examRoutes.js
+│   │   │   └── userRoutes.js
+│   │   ├── middleware/
+│   │   │   └── auth.js
+│   │   └── config/
+│   │       ├── database.js
+│   │       └── passport.js
+│   ├── package.json
+│   └── .env
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── docker-compose.yml
+├── .gitignore
 └── README.md
 ```
 
@@ -80,8 +120,8 @@ exam-portal-wireframe/
 
 ## 🚀 Quick Start
 
-```bash
 # Clone repository
+```bash
 git clone https://github.com/vishalmuthukumar17/ExamApplicationPortal.git
 
 ```
