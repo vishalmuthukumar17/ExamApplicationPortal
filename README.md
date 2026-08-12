@@ -1,14 +1,19 @@
-# 📝 Exam Application Portal - Wireframe
+# 📝 Exam Application Portal
 
-> High-fidelity wireframe prototype for a modern online examination system
+> A full-stack exam management system with student and admin interfaces
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue) ![Status](https://img.shields.io/badge/status-completed-success) ![Tool](https://img.shields.io/badge/tool-Figma-purple) ![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+![Frontend](https://img.shields.io/badge/frontend-React-61DAFB)
+![Backend](https://img.shields.io/badge/backend-Node.js-339933)
+![Database](https://img.shields.io/badge/database-MongoDB-47A248)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
 ## 📋 Description
 
-A complete high-fidelity wireframe prototype for an online examination portal featuring student registration, exam browsing, real-time testing with timer, payment integration, and admin dashboards for managing exams, users, and results. Designed with a comprehensive design system and responsive layouts.
+A complete exam application portal featuring student registration, real-time exam interface with timer, payment integration, and admin dashboards for managing exams, users, and results with responsive design.
 
 ---
 
@@ -20,45 +25,20 @@ A complete high-fidelity wireframe prototype for an online examination portal fe
 
 ---
 
-## 🖥️ Screens
-
-Landing Page | Login/Signup | Student Dashboard | Exam Listing | Exam Interface | Results Page | Admin Dashboard | Exam Creation | User Management 
-
----
-
-## 🎨 Design System
-
-| Element | Details |
-|---------|---------|
-| Primary Color | `#2563EB` |
-| Typography | Inter / Poppins |
-| Components | Buttons, Cards, Modals, Tables, Timers |
-| Responsive | Mobile, Tablet, Desktop |
-
----
-
-## 🔄 User Flow
-
-```
-Landing → Login/Signup → Dashboard → Select Exam → Start Exam → Submit → View Results
-                                      ↓
-Admin Login → Admin Dashboard → Manage Exams/Users/Reports
-```
-
----
-
 ## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| Figma | Wireframing & Prototyping |
-| React.js / Next.js | Frontend |
-| Node.js / Django | Backend |
-| PostgreSQL / MongoDB | Database |
+| Component | Technology |
+|-----------|------------|
+| Frontend | React.js / Next.js |
+| Backend | Node.js / Express |
+| Database | MongoDB / PostgreSQL |
+| Authentication | JWT |
+| Payment | Stripe / Razorpay |
+| Design | Figma |
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
 exam-portal/
@@ -112,7 +92,6 @@ exam-portal/
 │   ├── migrations/
 │   └── seeders/
 ├── docker-compose.yml
-├── .gitignore
 └── README.md
 ```
 
@@ -120,11 +99,39 @@ exam-portal/
 
 ## 🚀 Quick Start
 
-# Clone repository
-```bash
-git clone https://github.com/vishalmuthukumar17/ExamApplicationPortal.git
+### Frontend
 
+```bash
+cd frontend
+npm install
+npm start
 ```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Environment Variables
+
+Create `.env` files in both frontend and backend directories with required configurations.
+
+---
+
+## 📊 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/register` | User registration |
+| POST | `/api/auth/login` | User login |
+| GET | `/api/exams` | Get all exams |
+| POST | `/api/exams/create` | Create exam (admin) |
+| POST | `/api/exams/submit` | Submit exam |
+| GET | `/api/results/:id` | Get exam results |
+| GET | `/api/admin/users` | Get all users (admin) |
 
 ---
 
@@ -132,21 +139,30 @@ git clone https://github.com/vishalmuthukumar17/ExamApplicationPortal.git
 
 | Phase | Status |
 |-------|--------|
-| Low-Fidelity Wireframes | ✅ |
-| High-Fidelity Design | ✅ |
-| Interactive Prototype | ✅ |
-| Usability Testing | ✅ |
-| Development Handoff | ✅ |
+| Database Design | ✅ |
+| Backend API | ✅ |
+| Frontend UI | ✅ |
+| Deployment | ✅ |
 
 ---
 
 ## 🤝 Contributing
 
 1. Fork the repo
-2. Create feature branch (`git checkout -b feature/amazing`)
+2. Create feature branch
 3. Commit changes
 4. Push to branch
 5. Open Pull Request
 
 ---
 
+## 📝 License
+
+MIT License
+
+---
+
+
+⭐ Star if helpful!
+
+</div>
